@@ -1,0 +1,16 @@
+[package]
+name = "cordial_parity"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+[profile.release]
+opt-level = 3
+debug = false
+lto = "fat"
+incremental = false
+
+[profile.dev]
+opt-level = 1
+incremental = true
